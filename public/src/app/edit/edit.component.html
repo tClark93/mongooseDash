@@ -1,0 +1,9 @@
+<p>
+  edit works!
+</p>
+  {{editSloth | json}}
+    <form (submit)="edit()">
+        <input type="text" [(ngModel)]="editSloth.name" name="editSloth.name" required><br>
+        <input type="number" [(ngModel)]="editSloth.age" name="editSloth.age" required><br>
+        <button type="submit">Submit</button>
+    </form>

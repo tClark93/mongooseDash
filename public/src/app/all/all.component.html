@@ -1,0 +1,10 @@
+<div *ngFor="let sloth of sloths">
+  <div>
+    <h3>{{sloth['name']}}</h3>
+    <div>
+      <button [routerLink]="['/edit', sloth['_id']]">Edit</button>
+      <button (click)="delete(sloth['_id'])">Remove</button>
+    </div>
+  </div>
+
+</div>
